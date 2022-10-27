@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="wtch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="center" image="Group 56" id="fi3-lV-RDV"/>
+                        <textField width="1" alignment="left" text="E-mail" id="M0K-Ab-SrG"/>
+                        <textField width="1" alignment="left" text="Пароль" id="T9M-jI-AJr"/>
+                        <button width="1" alignment="left" title="Войти" id="wgN-KA-l1E">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.8630473018" green="0.2925665677" blue="0.14500346780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                            <connections>
+                                <segue destination="Sz9-QH-F9q" kind="push" id="KvP-Pc-Scl"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="jU4-uQ-VfH">
+            <objects>
+                <controller id="Sz9-QH-F9q">
+                    <items>
+                        <imageView width="77" height="77" alignment="left" image="Button_bg" id="e5C-Ou-TFO"/>
+                        <label width="83" alignment="left" text="Обсуждения" textAlignment="left" baselineAdjustment="alignCenters" id="nvg-eg-fYQ">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <imageView width="77" height="77" alignment="left" image="Button_bg" id="Ufg-lq-3lQ"/>
+                        <label alignment="left" text="Избранное" id="jvU-jh-cLS">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="425.73913043478257" y="344.55357142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button_bg" width="67" height="67"/>
+        <image name="Group 56" width="55" height="31"/>
+    </resources>
+</document>
